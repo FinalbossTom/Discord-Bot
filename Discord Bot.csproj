@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Discord_Bot</RootNamespace>
+	<PublishSingleFile>true</PublishSingleFile>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup> 
+  
+  <ItemGroup>
+    <PackageReference Include="Discord.Net" Version="3.17.1" />
+    <PackageReference Include="Discord.Net.Commands" Version="3.17.1" />
+    <PackageReference Include="Discord.Net.Core" Version="3.17.1" />
+    <PackageReference Include="Discord.Net.Rest" Version="3.17.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Bot\Commands\Slash\General\" />
+    <Folder Include="Bot\Commands\Slash\Event\" />
+    <Folder Include="Bot\Commands\Slash\Fun\" />
+    <Folder Include="Bot\Commands\Slash\Account\" />
+    <Folder Include="Bot\Commands\Slash\Utility\" />
+  </ItemGroup>
+
+</Project>
